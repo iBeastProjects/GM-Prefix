@@ -110,7 +110,7 @@ void CPythonTextTail::DeleteTextTail(TTextTail * pTextTail)
 }
 
 #ifdef ENABLE_GAMEMASTER_PREFIX
-void CPythonTextTail::AttachGMTitle(DWORD dwVID, const char * c_szRank)
+void CPythonTextTail::AttachGMTitle(DWORD dwVID, const char * c_szGMTitle)
 {
 	if (!bPKTitleEnable)
 		return;
@@ -135,7 +135,7 @@ void CPythonTextTail::AttachGMTitle(DWORD dwVID, const char * c_szRank)
 		prGMTitle->SetVerticalAlign(CGraphicTextInstance::VERTICAL_ALIGN_BOTTOM);
 	}
 
-	prGMTitle->SetValue(c_szRank);
+	prGMTitle->SetValue(c_szGMTitle);
 	prGMTitle->SetColor(255.0f, 0.0f, 0.0f);
 	prGMTitle->Update();
 }

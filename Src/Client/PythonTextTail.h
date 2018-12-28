@@ -21,7 +21,7 @@ class CPythonTextTail : public CSingleton<CPythonTextTail>
 		[...]
 		
 #ifdef ENABLE_GAMEMASTER_PREFIX
-		void AttachGMTitle(DWORD dwVID, const char * c_szRank);
+		void AttachGMTitle(DWORD dwVID, const char * c_szGMTitle);
 		void DetachGMTitle(DWORD dwVID);
 #endif
 
